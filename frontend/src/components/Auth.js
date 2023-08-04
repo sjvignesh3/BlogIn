@@ -20,6 +20,7 @@ const Auth = () => {
         }));
     };
     const sendRequest = async(type='') => {
+        console.log("Before");
         const res = await axios.post(`http://localhost:5000/api/user/${type}`,{
             name: inputs.name,
             email: inputs.email,

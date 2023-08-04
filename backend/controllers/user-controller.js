@@ -12,7 +12,8 @@ export const getAllUser = async(req,res,next) => {
     else return res.status(200).json({users});
 };
 
-export const signup = async(req,res,next) => {
+export const signup = async(req,res) => {
+    {console.log("Inside UC");}
     const {name, email, password} = req.body;
 
     let existingUser;

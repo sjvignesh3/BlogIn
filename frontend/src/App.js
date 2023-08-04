@@ -28,8 +28,7 @@ function App() {
       </header>
       <main>
         <Routes>
-          {console.log(isLoggedIn)}
-          {!isLoggedIn ? <Route path="/" element={<Auth/>} /> :
+          {!isLoggedIn ? <Route path="/auth" element={<Auth/>} /> :
           <>
           <Route path="/blogs" element={<Blogs/>}/>
           <Route path="/blogs/add" element={<AddBlog/>}/>
